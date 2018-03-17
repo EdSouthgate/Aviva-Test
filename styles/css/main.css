@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'myriad-pro';
+  src: url("../../assets/MyriadPro-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'frutigerLTStd';
+  src: url("../../assets/FrutigerLTStd Light.otf") format("opentype"); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "myriad-pro", sans-serif; }
+
+a {
+  text-decoration: none;
+  font-family: "myriad-pro", sans-serif; }
+
+p {
+  display: inline-block;
+  font-family: "myriad-pro", sans-serif; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0; }
+
+.home-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw; }
+
+.grid-container {
+  display: inline-block;
+  width: 964px;
+  height: 100%;
+  margin-left: calc(50% - 482px); }
+  .grid-container .row {
+    display: flex; }
+  .grid-container .col-100 {
+    width: 963px;
+    margin: 0; }
+  .grid-container .col-1 {
+    width: 301px;
+    margin: 0; }
+  .grid-container .col-2 {
+    width: 301px;
+    margin: 0 0 0 31px; }
+  .grid-container .col-3 {
+    width: 301px;
+    margin: 0 0 0 31px; }
+  .grid-container .col-1to2 {
+    width: 629px;
+    display: inline-block;
+    height: auto;
+    margin: 0; }
+  .grid-container .col-2to3 {
+    width: 334px;
+    display: inline-block;
+    margin: 0; }
+  .grid-container .col-1to3 {
+    width: 663px;
+    display: inline-block;
+    margin: 0; }
+  .grid-container .box-301-right {
+    height: 301px;
+    width: 301px;
+    margin: 0 0 0 32px; }
+  .grid-container .box-301-left {
+    height: 301px;
+    width: 301px;
+    margin: 0;
+    background-color: blue; }
+  .grid-container .box-400 {
+    width: 301px;
+    height: 400px;
+    background-color: pink;
+    margin-top: 30px; }
+    .grid-container .box-400 button {
+      height: 99px;
+      width: 301px;
+      border: none;
+      margin: 0;
+      color: #004fb6;
+      background-color: #ffd900; }
+  .grid-container .box-629-left {
+    width: 629px;
+    height: 301px; }
+  .grid-container .box-629-right {
+    width: 629px;
+    height: 301px;
+    background-color: #004fb6;
+    margin-top: 30px;
+    margin-left: 31px; }
+
+@media (max-width: 1043px) {
+  .grid-container {
+    width: 300px;
+    margin-left: calc(50% - 150px); }
+    .grid-container .row {
+      display: block; }
+    .grid-container .col-100 {
+      width: 300px; }
+    .grid-container .col-1 {
+      width: 300px; }
+    .grid-container .col-2 {
+      width: 300px;
+      margin-left: 0; }
+    .grid-container .col-3 {
+      width: 300px;
+      margin-left: 0px; }
+    .grid-container .col-1to2 {
+      width: 300px;
+      display: inline-block; }
+    .grid-container .col-2to3 {
+      width: 300px;
+      display: inline-block; }
+    .grid-container .col-1to3 {
+      width: 300px;
+      display: inline-block; }
+    .grid-container .box-301-right {
+      height: 301px;
+      width: 300px;
+      margin: 0; }
+    .grid-container .box-301-left {
+      height: 301px;
+      width: 300px;
+      margin: 0;
+      background-color: blue; }
+    .grid-container .box-400 {
+      width: 300px;
+      height: 400px;
+      background-color: pink;
+      margin-top: 0; }
+    .grid-container .box-629-left {
+      width: 300px;
+      height: 301px; }
+    .grid-container .box-629-right {
+      width: 300px;
+      height: 301px;
+      margin-top: 0px;
+      margin-left: 0px; } }
+
+.nav {
+  background-color: #ffffff;
+  height: 65px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: fixed; }
+  .nav .nav-text {
+    font-family: "myriad-pro", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #004fb6;
+    margin: 0 0 0 0;
+    padding: 0; }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center; }
+  .nav .push-left {
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    .nav .push-left li {
+      max-height: 65px;
+      width: auto;
+      display: flex;
+      margin: 0;
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 0; }
+    .nav .push-left .logo-wrap {
+      background-color: #ffd900;
+      height: 65px;
+      width: 207px; }
+      .nav .push-left .logo-wrap img {
+        padding: 23px 41px; }
+    .nav .push-left .hamburger-wrap {
+      background-color: #ffffff;
+      width: 65px;
+      display: none;
+      justify-content: center;
+      align-content: center; }
+  .nav .push-right {
+    height: 65px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: auto; }
+    .nav .push-right li {
+      max-height: 65px;
+      display: flex;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 0;
+      text-align: center; }
+      .nav .push-right li img {
+        height: 21px; }
+    .nav .push-right .li-100 {
+      width: 60px;
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 0; }
+    .nav .push-right .li-170 {
+      width: 170px;
+      padding-left: 43px; }
+  @media (max-width: 1043px) {
+    .nav .push-left li {
+      display: none; }
+    .nav .push-left ul img {
+      display: none; }
+    .nav .push-left .hamburger-wrap {
+      display: flex; }
+    .nav .push-right .remove {
+      display: none; } }
+
+.hero {
+  height: 745px;
+  background-image: url("../../assets/hero.png");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover; }
+
+.center-text {
+  text-align: center;
+  width: 100%; }
+  .center-text button {
+    background-color: #ffd900;
+    border: none;
+    width: 196px;
+    height: 57px;
+    border-radius: 5px;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 14px;
+    color: #004fb6;
+    padding: 22px; }
+
+#hero-p {
+  margin-top: 257px;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 0;
+  line-height: 26px;
+  letter-spacing: -0.0010em; }
+
+#hero-h1 {
+  font-family: "frutigerLTStd", sans-serif;
+  font-size: 76px;
+  font-weight: lighter;
+  margin-top: 34px;
+  padding: 0;
+  color: #ffffff;
+  line-height: 84.16px;
+  letter-spacing: -0.0030em; }
+
+@media (max-width: 1043px) {
+  .hero {
+    background-size: cover;
+    height: 460px;
+    display: flex;
+    background-position: right; }
+    .hero .grid-container {
+      width: 100vw;
+      margin-left: 0; }
+  #hero-p {
+    margin: 157px 0 0 0;
+    letter-spacing: -0.0010em;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 25.91px;
+    font-weight: lighter; }
+  #hero-h1 {
+    font-size: 42px;
+    margin-top: 16px;
+    letter-spacing: -0.015em;
+    padding: 0;
+    color: #ffffff;
+    font-weight: lighter;
+    line-height: 42px; }
+  .hero-text-position {
+    text-align: center;
+    width: 100%; }
+    .hero-text-position button {
+      background-color: #ffd900;
+      border: none;
+      width: 130px;
+      height: 58px;
+      border-radius: 5px;
+      font-family: "myriad-pro", sans-serif;
+      font-size: 14px;
+      color: #004fb6; } }
+
+.modules {
+  height: 1235px;
+  width: 100vw;
+  background-color: #efefef;
+  display: inline-block; }
+  .modules .center-text {
+    height: 125px; }
+  .modules .yellow {
+    background-color: #ffd900; }
+    .modules .yellow .main {
+      font-size: 18px;
+      line-height: 26px;
+      color: #004fb6;
+      margin: 110px 25px;
+      padding: 0;
+      text-align: center; }
+  .modules p {
+    color: #333;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    align-content: center;
+    padding: 50px 0; }
+
+#aviva-drive {
+  background-image: url("../../assets/aviva-drive-background.png");
+  display: inline-block; }
+  #aviva-drive .main {
+    font-size: 20px;
+    line-height: 28px;
+    color: #1b1c1d;
+    margin: 25px;
+    padding: 13px 280px 0 0; }
+  #aviva-drive .supporting {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1b1c1d;
+    margin: 13px 25px;
+    padding: 0 331px 0 0; }
+
+#saving-future {
+  background-image: url("../../assets/saving-for-the-future.png"); }
+
+@media (max-width: 1043px) {
+  .modules {
+    height: auto; }
+  #aviva-drive .main {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 25px 15px;
+    padding: 0; }
+  #aviva-drive .supporting {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 15px;
+    padding: 0; }
+  .center-text p {
+    margin-left: -10px; } }

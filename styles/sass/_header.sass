@@ -1,0 +1,105 @@
+
+.nav
+  background-color: $white
+  height: 65px
+  width: 100vw
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  position: fixed
+
+
+  .nav-text
+    font-family: $myriad-pro
+    font-size: 14px
+    line-height: 26px
+    color: $blue
+    margin: 0 0 0 0
+    padding: 0
+
+  ul
+    list-style: none
+    display: flex
+    flex-direction: row
+    margin: 0
+    padding: 0
+    justify-content: center
+    align-content: center
+
+
+
+  .push-left
+    height: 65px
+    margin: 0
+    padding: 0
+    display: flex
+
+    li
+      max-height: 65px
+      width: auto
+      display: flex
+      margin: 0
+      padding-top: 20px
+      padding-left: 40px
+      padding-right: 40px
+      padding-bottom: 0
+
+    .logo-wrap
+      background-color: $yellow
+      height: 65px
+      width: 207px
+
+      img
+        padding: 23px 41px
+
+    .hamburger-wrap
+      background-color: $white
+      width: 65px
+      display: none
+      justify-content: center
+      align-content: center
+
+  .push-right
+    height: 65px
+    margin: 0
+    padding: 0
+    display: flex
+    width: auto
+
+    li
+      max-height: 65px
+      display: flex
+      margin: 0
+      padding-top: 20px
+      padding-bottom: 0
+      text-align: center
+
+      img
+        height: 21px
+
+    .li-100
+      width: 60px
+      text-align: center
+      padding-left: 50px
+      padding-right: 0
+
+    .li-170
+      width: 170px
+      padding-left: 43px
+
+  @media (max-width: 1043px)
+    .push-left
+      li
+        display: none
+
+      ul
+        img
+          display: none
+
+      .hamburger-wrap
+        display: flex
+
+    .push-right
+      .remove
+        display: none

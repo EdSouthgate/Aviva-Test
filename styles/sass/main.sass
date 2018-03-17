@@ -1,0 +1,196 @@
+@import "susy";
+
+@font-face
+  font-family: 'myriad-pro'
+  src: url('../../assets/MyriadPro-Regular.woff') format('woff')
+
+@font-face
+  font-family: 'frutigerLTStd'
+  src: url('../../assets/FrutigerLTStd Light.otf') format('opentype')
+
+
+  'myriad-pro', '../../assets/MyriadPro-Regular'
+
+$main-font: 'Source Sans Pro', sans-serif
+$myriad-pro: 'myriad-pro', sans-serif
+$frutigerLTStd: 'frutigerLTStd', sans-serif
+$white: #ffffff
+$offwhite: #efefef
+$yellow: #ffd900
+$blue: #004fb6
+$green: #59b337
+$lightGrey: #2d2f30
+$darkGrey: #1b1c1d
+
+
+h1, h2, h3, h4, h5, h6
+  font-family: $myriad-pro
+a
+  text-decoration: none
+  font-family: $myriad-pro
+p
+  display: inline-block
+  font-family: $myriad-pro
+
+html
+  margin: 0
+  padding: 0
+
+body
+  background-color: #333
+  margin: 0
+  padding: 0
+
+.home-wrap
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  min-width: 100vw
+
+//layout
+.grid-container
+  display: inline-block
+  width: 964px
+  height: 100%
+  margin-left: calc(50% - 482px)
+
+  .row
+    display: flex
+
+  .col-100
+    width: 963px
+    margin: 0
+
+  .col-1
+    width: 301px
+    margin: 0
+
+  .col-2
+    width: 301px
+    margin: 0 0 0 31px
+
+
+  .col-3
+    width: 301px
+    margin: 0 0 0 31px
+
+  .col-1to2
+    width: 629px
+    display: inline-block
+    height: auto
+    margin: 0
+
+  .col-2to3
+    width: 334px
+    display: inline-block
+    margin: 0
+
+  .col-1to3
+    width: 663px
+    display: inline-block
+    margin: 0
+
+  .box-301-right
+    height: 301px
+    width: 301px
+    margin: 0 0 0 32px
+
+  .box-301-left
+    height: 301px
+    width: 301px
+    margin: 0
+    background-color: blue
+
+  .box-400
+    width: 301px
+    height: 400px
+    background-color: pink
+    margin-top: 30px
+
+    button
+      height: 99px
+      width: 301px
+      border: none
+      margin: 0
+      color: $blue
+      background-color: $yellow
+
+  .box-629-left
+    width: 629px
+    height: 301px
+
+  .box-629-right
+    width: 629px
+    height: 301px
+    background-color: $blue
+    margin-top: 30px
+    margin-left: 31px
+
+@media (max-width: 1043px)
+  .grid-container
+    width: 300px
+    margin-left: calc(50% - 150px)
+
+    .row
+      display: block
+
+    .col-100
+      width: 300px
+
+
+    .col-1
+      width: 300px
+
+
+    .col-2
+      width: 300px
+      margin-left: 0
+
+
+    .col-3
+      width: 300px
+      margin-left: 0px
+
+    .col-1to2
+      width: 300px
+      display: inline-block
+
+
+    .col-2to3
+      width: 300px
+      display: inline-block
+
+    .col-1to3
+      width: 300px
+      display: inline-block
+
+    .box-301-right
+      height: 301px
+      width: 300px
+      margin: 0
+
+    .box-301-left
+      height: 301px
+      width: 300px
+      margin: 0
+      background-color: blue
+
+    .box-400
+      width: 300px
+      height: 400px
+      background-color: pink
+      margin-top: 0
+
+    .box-629-left
+      width: 300px
+      height: 301px
+
+    .box-629-right
+      width: 300px
+      height: 301px
+      margin-top: 0px
+      margin-left: 0px
+
+@import header
+@import hero
+@import modules
