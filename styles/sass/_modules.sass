@@ -1,8 +1,28 @@
+
 .modules
   height: 1235px
   width: 100vw
   background-color: $offwhite
   display: inline-block
+
+  .flip
+    -moz-transform: scaleX(-1)
+    -o-transform: scaleX(-1)
+    -webkit-transform: scaleX(-1)
+    transform: scaleX(-1)
+    filter: FlipH
+    -ms-filter: "FlipH"
+
+  .contain-arrows
+    width: 90px
+    display: flex
+    justify-content: space-between
+    margin-left: calc(50% - 45px)
+    position: relative
+    
+
+  #short
+    display: none
 
   .center-text
     height: 125px
@@ -17,6 +37,46 @@
       margin: 110px 25px
       padding: 0
       text-align: center
+
+  .green
+    background-color: $green
+
+    .main
+      font-size: 18px
+      line-height: 26px
+      color: $blue
+      margin: 110px 25px
+      padding: 0
+      text-align: center
+
+  .blue
+    background-color: $blue
+
+    .main#long
+      font-size: 18px
+      line-height: 26px
+      color: $blue
+      margin: 110px 140px 0 140px
+      padding: 0
+      text-align: center
+      color: $white
+      width: 317px
+
+    .supporting
+      font-size: 14px
+      line-height: 44px
+      color: $white
+      text-align: center
+      padding: 0
+      width: 632px
+
+  .margin-top-100
+    margin-top: -100px
+
+  .margin-top-75
+    margin-top: -70px
+
+
 
   p
     color: #333
@@ -49,8 +109,34 @@
 
 
 @media (max-width: 1043px)
+
+
+
   .modules
     height: auto
+
+    .margin-top-100
+      margin-top: 15px
+
+    .margin-top-75
+      margin-top: 15px
+
+    .blue
+      .main#short
+        display: inline-block
+        font-size: 18px
+        line-height: 24px
+        margin: 84px 55px 0px 55px
+        padding: 0
+        width: 190px
+        text-align: center
+        color: $white
+
+      .main#long
+        display: none
+      .supporting
+        width: 300px
+
   #aviva-drive
     .main
       font-size: 18px
@@ -63,6 +149,7 @@
       line-height: 24px
       margin: 0px 15px
       padding: 0
+
 
   .center-text
     p

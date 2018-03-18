@@ -71,12 +71,10 @@ body {
   .grid-container .box-301-left {
     height: 301px;
     width: 301px;
-    margin: 0;
-    background-color: blue; }
+    margin: 30px 0 0 0; }
   .grid-container .box-400 {
     width: 301px;
     height: 400px;
-    background-color: pink;
     margin-top: 30px; }
     .grid-container .box-400 button {
       height: 99px;
@@ -86,14 +84,15 @@ body {
       color: #004fb6;
       background-color: #ffd900; }
   .grid-container .box-629-left {
-    width: 629px;
+    width: 632px;
     height: 301px; }
   .grid-container .box-629-right {
-    width: 629px;
+    width: 632px;
     height: 301px;
-    background-color: #004fb6;
     margin-top: 30px;
-    margin-left: 31px; }
+    margin-left: 31px;
+    text-align: center;
+    position: relative; }
 
 @media (max-width: 1043px) {
   .grid-container {
@@ -123,25 +122,23 @@ body {
     .grid-container .box-301-right {
       height: 301px;
       width: 300px;
-      margin: 0; }
+      margin: 14px 0 0 0; }
     .grid-container .box-301-left {
       height: 301px;
       width: 300px;
-      margin: 0;
-      background-color: blue; }
-    .grid-container .box-400 {
+      margin: 14px 0 0 0; }
+    .grid-container .box-400, .grid-container .box-400.green, .grid-container box-400.yellow {
       width: 300px;
       height: 400px;
-      background-color: pink;
-      margin-top: 0; }
+      margin: 14px 0 0 0; }
     .grid-container .box-629-left {
       width: 300px;
-      height: 301px; }
+      height: 301px;
+      margin: 14px 0 0 0; }
     .grid-container .box-629-right {
       width: 300px;
       height: 301px;
-      margin-top: 0px;
-      margin-left: 0px; } }
+      margin: 14px 0 0 0; } }
 
 .nav {
   background-color: #ffffff;
@@ -151,7 +148,8 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
   .nav .nav-text {
     font-family: "myriad-pro", sans-serif;
     font-size: 14px;
@@ -307,6 +305,21 @@ body {
   width: 100vw;
   background-color: #efefef;
   display: inline-block; }
+  .modules .flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; }
+  .modules .contain-arrows {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(50% - 45px);
+    position: relative; }
+  .modules #short {
+    display: none; }
   .modules .center-text {
     height: 125px; }
   .modules .yellow {
@@ -318,6 +331,37 @@ body {
       margin: 110px 25px;
       padding: 0;
       text-align: center; }
+  .modules .green {
+    background-color: #59b337; }
+    .modules .green .main {
+      font-size: 18px;
+      line-height: 26px;
+      color: #004fb6;
+      margin: 110px 25px;
+      padding: 0;
+      text-align: center; }
+  .modules .blue {
+    background-color: #004fb6; }
+    .modules .blue .main#long {
+      font-size: 18px;
+      line-height: 26px;
+      color: #004fb6;
+      margin: 110px 140px 0 140px;
+      padding: 0;
+      text-align: center;
+      color: #ffffff;
+      width: 317px; }
+    .modules .blue .supporting {
+      font-size: 14px;
+      line-height: 44px;
+      color: #ffffff;
+      text-align: center;
+      padding: 0;
+      width: 632px; }
+  .modules .margin-top-100 {
+    margin-top: -100px; }
+  .modules .margin-top-75 {
+    margin-top: -70px; }
   .modules p {
     color: #333;
     font-size: 20px;
@@ -348,6 +392,23 @@ body {
 @media (max-width: 1043px) {
   .modules {
     height: auto; }
+    .modules .margin-top-100 {
+      margin-top: 15px; }
+    .modules .margin-top-75 {
+      margin-top: 15px; }
+    .modules .blue .main#short {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 84px 55px 0px 55px;
+      padding: 0;
+      width: 190px;
+      text-align: center;
+      color: #ffffff; }
+    .modules .blue .main#long {
+      display: none; }
+    .modules .blue .supporting {
+      width: 300px; }
   #aviva-drive .main {
     font-size: 18px;
     line-height: 24px;
